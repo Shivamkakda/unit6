@@ -1,0 +1,243 @@
+body{
+    /* background-color: blue; */
+    max-width: 100%;
+}
+.navbar{
+    padding-top: 10px;
+    display: grid;
+  grid-row-gap: 50px;
+  grid-template-columns: auto auto auto;
+}
+
+.container{
+    background-image: url("https://s.imgur.com/desktop-assets/desktop-assets/homebg.e52b5cdf24f83bcd55f9f1318855f2ef.png");
+    max-width: 100%;
+    height: 300px;
+}
+.logo{
+    margin-top: 20px;
+    margin-right: 20px;
+}
+#search{
+    position: absolute;
+    left: 32%;
+    top: 3%;
+    height: 35px;
+    width: 500px;
+    background-color: #ffffff40;
+    border: none;
+    color: white;
+    border: 1px solid transparent;
+    border-radius: 3px;
+    -webkit-text-fill-color: inherit;
+    letter-spacing: 0.4px;
+    font-weight: 700;
+    outline: none;
+    opacity: 0.8;
+    font-size: 16px;
+    padding-left: 2%;
+    text-decoration: none;
+}
+
+#search::placeholder{
+    color: rgb(243, 243, 243);
+    /* padding-left: 2%; */
+}
+
+#searchBtn{
+    position: absolute;
+    left: 63.5%;
+    top: 3%;
+    width: 50px;
+    height: 38px;
+    background-color: transparent;
+    border: none;
+}
+
+#searchresult{
+    width: 515px;
+    height: 300px;
+    background-color: #3c424b;
+    color: #b5b9c2;
+    position: absolute;
+    left: 32%;
+    top: 9.5%;
+    border-radius: 3px;
+    display: none;
+    overflow-y: scroll;
+    box-shadow: 0 22px 40px 0 rgb(0 0 0 / 25%);
+    padding: 8px 8px 27px;
+}
+::-webkit-scrollbar {
+        width: 0; 
+        background: transparent;
+}
+
+#searchTitle{
+    padding: 1% 3%;
+    text-transform: uppercase;
+    font-size: 17px;
+    line-height: 2.24;
+    letter-spacing: .9px;
+    cursor: pointer;
+    font-family: "Helvetica";
+}
+
+#searchTitle:hover{
+    color: white;
+}
+#navButtton{
+    margin-left: 600px;
+}
+
+.btn{
+    text-align: center;
+    height: 35px;
+    display: inline-block;
+    padding: 7px 14px 10px 9px;
+    text-transform: none;
+    user-select: none;
+    touch-action: manipulation;
+    border-radius: 6px;
+    font-size: 15px;
+    font-weight: 700;
+    position: relative;
+    width: auto;
+}
+#btn1{
+    background: #6432f9;
+    box-shadow: 0 3px 4px rgb(0 0 0 / 12%);
+    padding: 0 10px 0 9px;
+    overflow: hidden;
+    margin: auto 0;
+    line-height: 35px;
+    color: white;
+}
+#btn2{
+    margin: auto 24px auto 8px;
+    font-size: 15px;
+    font-weight: 600;
+    text-align: center;
+    color: #fff;
+    vertical-align: middle;
+    text-decoration: none;
+    background-color: transparent;
+    border: none;
+
+}
+#btn3{
+    background-color: #1bb76e;
+    box-shadow: 0 6px 10px 0 rgb(27 28 30 / 31%);
+    color: #fff;
+    white-space: nowrap;
+}
+
+#btn3> img{
+    padding: 0;
+    font-size: inherit;
+    position: inherit;
+    display: inline-block;
+    margin-right: 13px;
+    vertical-align: middle;
+}
+.uScaleTransition{
+    position: relative;
+    top: 8px;
+    overflow: hidden;
+}
+.Message{
+    font-size: 24px;
+    font-family: Proxima Nova ExtraBold,Helvetica Neue,Helvetica,Arial,sans-serif;
+    color: #aed8ea;
+    text-align: center;
+    margin-top: 12px;
+    min-height: 34px;
+    position: relative;
+    margin-left: -130px;
+}
+.tags{
+    padding: 2px 5px;
+    font-size: 18px;
+    font-weight: 600;
+    text-align: center;
+    color: #babec4;
+    cursor: pointer;
+    background-color: transparent;
+    box-shadow: transparent;
+    border: transparent;
+}
+option{
+    font-size: 16px;
+    background-color: #353536;
+    color: #fff;
+    overflow-y: scroll;
+    overflow-x: hidden;
+}
+option:hover{
+    background-color: transparent;
+}
+.drop{
+    margin-top: 50px;
+   display: inline-block;
+   margin-left: 200px;
+}
+#drop2{
+    margin-left: 600px;
+}
+#icn{
+    margin-left: -10px;
+}
+.icons{
+    margin-top: 5px;
+    display: inline-block;
+    margin-left: 20px;
+    position: relative;
+    color:#babec4 ;
+}
+.icons .tooltiptext {
+    visibility: hidden;
+    width: 120px;
+    background-color: #1bb76e;
+    color: #fff;
+    text-align: center;
+    border-radius: 6px;
+    padding: 5px 0;
+    position: absolute;
+    z-index: 1;
+    bottom: 125%;
+    left: 50%;
+    margin-left: -60px;
+    opacity: 0;
+    transition: opacity 0.3s;
+  }
+  
+.icons .tooltiptext::after {
+    content: "";
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    margin-left: -5px;
+    border-width: 5px;
+    border-style: solid;
+    border-color: #1bb76e transparent transparent transparent;
+  }
+.icons:hover .tooltiptext {
+    visibility: visible;
+    opacity: 1;
+  }
+  #cards{
+      margin-left:50px;
+      text-align: center;
+  }
+  .image{
+      border: 2px black;
+      width: 23%;
+      top: 50px;
+      height: 300px;
+      padding: 10px;
+  }
+ 
+
+
+  
+  
